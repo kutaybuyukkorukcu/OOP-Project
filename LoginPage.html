@@ -1,0 +1,77 @@
+<!-- Twitter projesi login page icin iskelet -->
+
+<!-- Header, main, footer-->
+<!-- Datalist?-->
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> {PlatformAdi}'na hosgeldiniz!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav id="navbar-id" class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a id="incr" href="#">Page 3</a></li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <table>
+            <tr>
+              <!-- <span style="margin-left:58px;font-size: 12px;color: white;">Sifre</span><br> -->
+              <span style="font-size: 12px;color: white;">Email veya Telefon Numarasi</span>
+              <span style="margin-right:55px;"></span>
+              <span style="font-size: 12px;color: white;">Sifre</span><br>
+            </tr>
+            <tr>
+              <input type="text" class="form-control" placeholder="Username">
+              <span style="margin-right:20px;"></span>
+              <input type="text" class="form-control" placeholder="Password">
+              <span style="margin-right:8px;"></span>
+              <button type="submit" class="btn btn-default"></button> <!-- Button'un boyutunu ayarla -->
+            </tr>
+          </table>
+          <span style="color: white;font-size: 9px;">Forgot your password?</span>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <main>
+    <!-- 2 formu yanyana koymak icin 2 ayri form yerine bir formda ikisini 
+    belirtmek mi gerekiyor acaba?-->
+    <span style="margin-left: 2%"><img src="WeirdChamp.jpg" alt="FeelsWeirdMan"></span>
+    <!-- Dogum tarihi icin select kullan. gun, ay, yil icin ayri select-->
+    <form action="/register" class="form-inline">
+      <span style="font-size:48px;">Register</span> <br><br>
+      <span style="font-size:15px;">Email Adresiniz : <input style="width: 60%;" type="email" class="form-control"
+          placeholder="Username" required> * </span><br><br>
+      <span style="font-size:15px;">Sifre : <input style="width: 60%;" type="password" class="form-control"
+          placeholder="Password" required> * </span><br><br>
+      <span style="font-size:15px;">Dogum Tarihiniz : <input style="width: 50%;" type="date"
+          class="form-control"></span><br><br>
+      <span style="font-size:15px;">Erkek <input type="radio" class="form-control"></span>
+      <span style="font-size:15px;">Kadin <input type="radio" class="form-control"></span><br><br>
+      <!-- Submit tusunu buyut, input boxlari buyut, -->
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer>
+    <dir class="footer-p">
+      <p>asd asdasdjaksdk asdhjkasdgsad asdhjas dgsadjalsk dh asjhgd</p>
+    </dir>
+  </footer>
+</body>
+
+</html>

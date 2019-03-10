@@ -1,0 +1,43 @@
+.register {
+  width: 40%;
+}
+
+.footer-p {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.footer-p {
+  font-size: 15px;
+}
+
+.usrnm-pswd {
+  font-size: 10px;
+  color: white;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.navbar-form {
+  margin-left: 29%;
+}
+
+.navbar-header {
+  margin-top: 15px;
+}
+
+.nav {
+  margin-top: 15px;
+}
+
+body {
+  background-color: azure;
+}

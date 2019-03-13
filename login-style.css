@@ -3,6 +3,7 @@
 }
 
 .footer-p {
+  margin-top: 100%;
   text-align: center;
 }
 
@@ -27,17 +28,34 @@ html {
 }
 
 .navbar-form {
-  margin-left: 29%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  margin-left: 1000px;
+  float: right;
 }
 
 .navbar-header {
   margin-top: 15px;
+  float: left;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .nav {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 body {
   background-color: azure;
+}
+
+.btn button:hover {
+  background: #ccc;
+}
+
+* {
+  box-sizing: border-box;
 }

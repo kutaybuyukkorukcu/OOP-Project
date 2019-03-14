@@ -22,15 +22,10 @@ html {
   font-size: 15px;
 }
 
-.usrnm-pswd {
-  font-size: 10px;
-  color: white;
-  text-align: right;
-  margin-right: 50px;
-}
-
-.container-fluid .form-group {
-  margin-left: 570px;
+.container-fluid form {
+  position: absolute;
+  right: 20px;
+  max-width: 500px;
 }
 
 .navbar-header {

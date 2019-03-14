@@ -1,3 +1,5 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css");
+
 .register {
   width: 40%;
 }
@@ -27,14 +29,8 @@ html {
   margin-right: 50px;
 }
 
-.navbar-form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  margin-left: 1000px;
-  float: right;
+.container-fluid .form-group {
+  margin-left: 570px;
 }
 
 .navbar-header {
@@ -45,7 +41,7 @@ html {
 }
 
 .nav {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 body {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,42 +10,135 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  
-  <nav class="navbar navbar-inverse" role="navigation">
-    
-  <div class="container-fluid">
-    <!-- add header -->
-      <div class="navbar-header">
+  <header>
+    <nav class="navbar navbar-inverse" role="navigation">
+
+      <div class="container-fluid">
+        <!-- add header -->
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <!-- add search form -->
           <form class="navbar-form navbar-right" role="search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search this site">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn btn-default">
-                          <span class="glyphicon glyphicon-search"></span>
-                      </button>
-                    </span>
-              </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search this site">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
           </form>
         </div>
 
-      <!-- add menu -->
-      <div class="collapse navbar-collapse" id="navbar1">
-        <ul class="nav navbar-nav" style="width:100%">
-              <li><a class="navbar-brand" href="#">WebSiteName</a></li>
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/services.html">Services</a></li>     
-          </ul>    
+        <!-- add menu -->
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="nav navbar-nav" style="width:100%">
+            <li><a class="navbar-brand" href="#">WebSiteName</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+          </ul>
         </div>
-  </div>
-</nav>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="bckgrnd-photo">
+      <img src="WeirdChamp.jpg" alt="Background_Photo">
+    </div>
+    <div class="info-bar">
+      <div class="ProfilePhoto">
+        <a class="ProfileAvatar-container"
+          href="https://pbs.twimg.com/profile_images/1091656361610489856/bm3VWMEJ_200x200.jpg"
+          data-url="https://pbs.twimg.com/profile_images/1091656361610489856/bm3VWMEJ_200x200.jpg">
+          <img class="ProfileAvatar-image"
+            src="https://pbs.twimg.com/profile_images/1091656361610489856/bm3VWMEJ_200x200.jpg" alt="Profile-Photo">
+        </a>
+      </div>
+      <nav class="navbar navbar-light" style="background-color: #0027f9;">
+        <div class="navbar-content">
+          <ul class="ProfileNav-list">
+            <li class="ProfileNav-item">
+              <a class="ProvileNav-stat" data-nav="tweets" href="/{Username}"></a>
+              <span class="ProfileNav-label">Tweets</span><br>
+              <span class="ProfileNav-value" data-count="26" data-is-compact="false">26</span>
+              <span style="margin-left:10px;display: inline-block">&nbsp;</span>
+            </li>
+            <li class="ProfileNav-item">
+              <a class="ProvileNav-stat" data-nav="following" href="/following"></a>
+              <span class="ProfileNav-label">Following</span><br>
+              <span class="ProfileNav-value" data-count="237" data-is-compact="false">237</span>
+            </li>
+            <li class="ProfileNav-item">
+              <a class="ProvileNav-stat" data-nav="followers" href="/followers"></a>
+              <span class="ProfileNav-label">Followers</span><br>
+              <span class="ProfileNav-value" data-count="34" data-is-compact="false">34</span>
+            </li>
+            <li class="ProfileNav-item">
+              <a class="ProvileNav-stat" data-nav="likes" href="/likes"></a>
+              <span class="ProfileNav-label">Likes</span><br>
+              <span class="ProfileNav-value" data-count="205" data-is-compact="false">205</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="Page-container">
+      <div class="Grid">
+        <div class="Grid-cell size1of3">
+          <div class="Profile-sidebar">
+            <div class="ProfileHeaderCard">
+              <p class="ProfileHeaderCard-name">
+                <a href="/KBuyukkorukcu" class="ProfileHeaderCard-nameLink" style="font-size:24px;">Kutay
+                  Buyukkorukcu</a>
+              </p>
+              <p class="ProfileHeaderCard-username">
+                <a href="/KBuyukkorukcu" class="ProfileHeaderCard-usernameLink"
+                  style="color: gray;font-size: 15px;">@KBuyukkorukcu</a>
+              </p>
+              <p class="ProfileHeaderCard-registerDate">
+                <span style="font-size: 10px;color: grey;">Joined November 2018</span>
+              </p>
+            </div>
+            <div class="Profile-PhotoListHeader">
+              <a href="/KBuyukkorukcu/media" class="Photo-Number">
+                {PhotoNumber} Photos and Videos
+              </a>
+            </div>
+            <div class="Profile-PhotolistHeader-Media">
+              <!-- 3 veya 6 tane en son attigim fotograflar listelenmis sekilde burada duracak-->
+              <!-- Her foto icin span kullanilmis twitter da 
+              data tagli, hrefli, span icinde 80x80 img var-->
+            </div>
+          </div>
+        </div>
+        <div class="Grid-cell size2of3">
+          <div class="ProfileMiddle-Bar">
+            <div class="ProfileMiddle-Header">
+              <ul class="ProfileMiddle-HeaderList">
+                <li class="ProfileMiddle-HeaderItems">
+                  <a href="/KBuyukkorukcu">Tweets</a>
+                </li>
+                <li class="ProfileMiddle-HeaderItems">
+                  <a href="/Replies">Tweets&Replies</a>
+                </li>
+                <li class="ProfileMiddle-HeaderItems">
+                  <a href="/KBuyukkorukcu/Media">Media</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

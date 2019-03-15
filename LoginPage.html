@@ -13,10 +13,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
   <nav id="navbar-id" class="navbar navbar-inverse">
     <div class="container-fluid">
-      <div class="navbar-header">
+      <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#navbar1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-header" id="navbar1">
         <a class="navbar-brand" href="#">WebSiteName</a>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
@@ -28,25 +35,25 @@
       <form class="navbar-form navbar-left">
         <div class="form-group">
           <table>
-            <tr>    
-              <td>
-		<span style="font-size: 12px;color: white;">Email veya Telefon Numarasi</span>
-		</td>
-              <td>
-<span style="font-size: 12px;color: white;">Sifre</span><br>
-		</td>            
-</tr>
             <tr>
-<td>
-              <input type="text" class="form-control" placeholder="Username">
-</td>    
-<td>     
-     <input type="text" class="form-control" placeholder="Password">
-</td>    
-<td>     
-     <button type="submit" class="btn btn-light">Login</button> <!-- Button'un boyutunu ayarla -->
-</td>   
-         </tr>
+              <td>
+                <span style="font-size: 12px;color: white;">Email veya Telefon Numarasi</span>
+              </td>
+              <td>
+                <span style="font-size: 12px;color: white;">Sifre</span><br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control" placeholder="Username">
+              </td>
+              <td>
+                <input type="text" class="form-control" placeholder="Password">
+              </td>
+              <td>
+                <button type="submit" class="btn btn-light">Login</button> <!-- Button'un boyutunu ayarla -->
+              </td>
+            </tr>
           </table>
           <span style="color: white;font-size: 9px;">Forgot your password?</span>
         </div>

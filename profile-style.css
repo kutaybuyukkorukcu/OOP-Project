@@ -74,3 +74,28 @@ main nav {
 main {
     background-color: azure;
 }
+
+.Grid-cell {
+    display: inline-block;
+}
+
+.ProfileMiddle-HeaderItems {
+    position: static;
+    display: inline-block;
+}
+
+.navbar-content {
+    padding-left: 5%;
+}
+
+.Grid {
+    margin-left: 5px;
+}
+
+.ProfileMiddle-Header h2 {
+    margin-bottom: 70px;
+}
+
+.ProfileMiddle-HeaderItems {
+    padding: 15px 15px 12px;
+}

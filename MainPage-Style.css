@@ -15,10 +15,6 @@
 	border-bottom: none;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
-	background-color: #337AB7;
-}
-
 .form-control-nav{
 	background-color:#F0FFFF;
   border: lightgrey solid 1px;

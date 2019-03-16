@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{ProfilePage}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="profile-style.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="profile-style-FTry.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
@@ -49,10 +49,10 @@
       </div>
     </nav>
   </header>
+  <div class="bckgrnd-photo">
+    <img src="WeirdChamp.jpg" alt="Background_Photo">
+  </div>
   <main>
-    <div class="bckgrnd-photo">
-      <img src="WeirdChamp.jpg" alt="Background_Photo">
-    </div>
     <div class="info-bar">
       <div class="ProfilePhoto">
         <a class="ProfileAvatar-container"
@@ -62,31 +62,34 @@
             src="https://pbs.twimg.com/profile_images/1091656361610489856/bm3VWMEJ_200x200.jpg" alt="Profile-Photo">
         </a>
       </div>
-      <nav class="navbar navbar-light" style="background-color: #0027f9;">
+      <hr style="height:1px;border:0 none;color:#333;background-color:#333;" />
+      <!-- Nav silinip, nav yerine border ile bir dikdortgen yapilacak-->
+      <nav class="navbar navbar-light" style="background-color: #2d45ce;">
         <div class="navbar-content">
           <ul class="ProfileNav-list">
+            <!-- li taglerinden data-is-compact="false" silindi.-->
             <li class="ProfileNav-item">
               <a class="ProvileNav-stat" data-nav="tweets" href="/{Username}"></a>
               <span class="ProfileNav-label">Tweets</span><br>
-              <span class="ProfileNav-value" data-count="26" data-is-compact="false">26</span>
+              <span class="ProfileNav-value" data-count="26">26</span>
               <span style="padding-left:70px">
             </li>
             <li class="ProfileNav-item">
               <a class="ProvileNav-stat" data-nav="following" href="/following"></a>
               <span class="ProfileNav-label">Following</span><br>
-              <span class="ProfileNav-value" data-count="237" data-is-compact="false">237</span>
+              <span class="ProfileNav-value" data-count="237">237</span>
               <span style="padding-left:80px"></span>
             </li>
             <li class="ProfileNav-item">
               <a class="ProvileNav-stat" data-nav="followers" href="/followers"></a>
               <span class="ProfileNav-label">Followers</span><br>
-              <span class="ProfileNav-value" data-count="34" data-is-compact="false">34</span>
+              <span class="ProfileNav-value" data-count="34">34</span>
               <span style="padding-left:90px"></span>
             </li>
             <li class="ProfileNav-item">
               <a class="ProvileNav-stat" data-nav="likes" href="/likes"></a>
               <span class="ProfileNav-label">Likes</span><br>
-              <span class="ProfileNav-value" data-count="205" data-is-compact="false">205</span>
+              <span class="ProfileNav-value" data-count="205">205</span>
               <span style="padding-left:70px"></span>
             </li>
           </ul>
@@ -125,17 +128,18 @@
         <div class="Grid-cell size2of3">
           <div class="ProfileMiddle-Bar">
             <div class="ProfileMiddle-Header">
+              <!-- Bu listeyi de border icine al.-->
               <ul class="ProfileMiddle-HeaderList">
                 <li class="ProfileMiddle-HeaderItems">
-                  <h2><a href="/KBuyukkorukcu">Tweets</a></h2>                  
+                  <h3><a href="/KBuyukkorukcu">Tweets</a></h3>
                   <span style="padding-left:50px"></span>
                 </li>
                 <li class="ProfileMiddle-HeaderItems">
-                  <h2><a href="/Replies">Tweets&Replies</a></h2>
+                  <h3><a href="/Replies">Tweets&Replies</a></h3>
                   <span style="padding-left:50px"></span>
                 </li>
                 <li class="ProfileMiddle-HeaderItems">
-                  <h2><a href="/KBuyukkorukcu/Media">Media</a></h2>
+                  <h3><a href="/KBuyukkorukcu/Media">Media</a></h3>
                   <span style="padding-left:50px"></span>
                 </li>
               </ul>
